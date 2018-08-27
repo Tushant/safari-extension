@@ -11,7 +11,38 @@
 		3A41087A2133C68A0093ED2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4108792133C68A0093ED2A /* ViewController.swift */; };
 		3A41087C2133C68A0093ED2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A41087B2133C68A0093ED2A /* Assets.xcassets */; };
 		3A41087F2133C68A0093ED2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A41087D2133C68A0093ED2A /* Main.storyboard */; };
+		3A41088E2133C6990093ED2A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A41088D2133C6990093ED2A /* Cocoa.framework */; };
+		3A4108912133C6990093ED2A /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4108902133C6990093ED2A /* SafariExtensionHandler.swift */; };
+		3A4108932133C6990093ED2A /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4108922133C6990093ED2A /* SafariExtensionViewController.swift */; };
+		3A4108962133C6990093ED2A /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A4108942133C6990093ED2A /* SafariExtensionViewController.xib */; };
+		3A4108992133C6990093ED2A /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3A4108982133C6990093ED2A /* script.js */; };
+		3A41089B2133C6990093ED2A /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 3A41089A2133C6990093ED2A /* ToolbarItemIcon.pdf */; };
+		3A41089F2133C6990093ED2A /* navi-extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3A41088B2133C6990093ED2A /* navi-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A41089D2133C6990093ED2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A41086C2133C68A0093ED2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A41088A2133C6990093ED2A;
+			remoteInfo = "navi-extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A4108A32133C6990093ED2A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3A41089F2133C6990093ED2A /* navi-extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A4108742133C68A0093ED2A /* navi-macos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "navi-macos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +52,15 @@
 		3A41087E2133C68A0093ED2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A4108802133C68A0093ED2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A4108812133C68A0093ED2A /* navi_macos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = navi_macos.entitlements; sourceTree = "<group>"; };
+		3A41088B2133C6990093ED2A /* navi-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "navi-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A41088D2133C6990093ED2A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3A4108902133C6990093ED2A /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		3A4108922133C6990093ED2A /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		3A4108952133C6990093ED2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		3A4108972133C6990093ED2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A4108982133C6990093ED2A /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		3A41089A2133C6990093ED2A /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		3A41089C2133C6990093ED2A /* navi_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = navi_extension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +71,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A4108882133C6990093ED2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A41088E2133C6990093ED2A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				3A4108762133C68A0093ED2A /* navi-macos */,
+				3A41088F2133C6990093ED2A /* navi-extension */,
+				3A41088C2133C6990093ED2A /* Frameworks */,
 				3A4108752133C68A0093ED2A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3A4108742133C68A0093ED2A /* navi-macos.app */,
+				3A41088B2133C6990093ED2A /* navi-extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +114,28 @@
 			path = "navi-macos";
 			sourceTree = "<group>";
 		};
+		3A41088C2133C6990093ED2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A41088D2133C6990093ED2A /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A41088F2133C6990093ED2A /* navi-extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A4108902133C6990093ED2A /* SafariExtensionHandler.swift */,
+				3A4108922133C6990093ED2A /* SafariExtensionViewController.swift */,
+				3A4108942133C6990093ED2A /* SafariExtensionViewController.xib */,
+				3A4108972133C6990093ED2A /* Info.plist */,
+				3A4108982133C6990093ED2A /* script.js */,
+				3A41089A2133C6990093ED2A /* ToolbarItemIcon.pdf */,
+				3A41089C2133C6990093ED2A /* navi_extension.entitlements */,
+			);
+			path = "navi-extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +146,34 @@
 				3A4108702133C68A0093ED2A /* Sources */,
 				3A4108712133C68A0093ED2A /* Frameworks */,
 				3A4108722133C68A0093ED2A /* Resources */,
+				3A4108A32133C6990093ED2A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3A41089E2133C6990093ED2A /* PBXTargetDependency */,
 			);
 			name = "navi-macos";
 			productName = "navi-macos";
 			productReference = 3A4108742133C68A0093ED2A /* navi-macos.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3A41088A2133C6990093ED2A /* navi-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A4108A02133C6990093ED2A /* Build configuration list for PBXNativeTarget "navi-extension" */;
+			buildPhases = (
+				3A4108872133C6990093ED2A /* Sources */,
+				3A4108882133C6990093ED2A /* Frameworks */,
+				3A4108892133C6990093ED2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "navi-extension";
+			productName = "navi-extension";
+			productReference = 3A41088B2133C6990093ED2A /* navi-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +186,9 @@
 				ORGANIZATIONNAME = "Tushant Khatiwada";
 				TargetAttributes = {
 					3A4108732133C68A0093ED2A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					3A41088A2133C6990093ED2A = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -112,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				3A4108732133C68A0093ED2A /* navi-macos */,
+				3A41088A2133C6990093ED2A /* navi-extension */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +219,16 @@
 			files = (
 				3A41087C2133C68A0093ED2A /* Assets.xcassets in Resources */,
 				3A41087F2133C68A0093ED2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A4108892133C6990093ED2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A41089B2133C6990093ED2A /* ToolbarItemIcon.pdf in Resources */,
+				3A4108962133C6990093ED2A /* SafariExtensionViewController.xib in Resources */,
+				3A4108992133C6990093ED2A /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +244,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3A4108872133C6990093ED2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A4108932133C6990093ED2A /* SafariExtensionViewController.swift in Sources */,
+				3A4108912133C6990093ED2A /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A41089E2133C6990093ED2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A41088A2133C6990093ED2A /* navi-extension */;
+			targetProxy = 3A41089D2133C6990093ED2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3A41087D2133C68A0093ED2A /* Main.storyboard */ = {
@@ -147,6 +270,14 @@
 				3A41087E2133C68A0093ED2A /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A4108942133C6990093ED2A /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A4108952133C6990093ED2A /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -268,6 +399,7 @@
 		3A4108852133C68A0093ED2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "navi-macos/navi_macos.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +418,7 @@
 		3A4108862133C68A0093ED2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "navi-macos/navi_macos.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +430,42 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.navi.navi-macos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3A4108A12133C6990093ED2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "navi-extension/navi_extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "navi-extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.navi.navi-macos.navi-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3A4108A22133C6990093ED2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "navi-extension/navi_extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "navi-extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.navi.navi-macos.navi-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -318,6 +487,15 @@
 			buildConfigurations = (
 				3A4108852133C68A0093ED2A /* Debug */,
 				3A4108862133C68A0093ED2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A4108A02133C6990093ED2A /* Build configuration list for PBXNativeTarget "navi-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A4108A12133C6990093ED2A /* Debug */,
+				3A4108A22133C6990093ED2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
