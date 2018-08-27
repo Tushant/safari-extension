@@ -61,6 +61,7 @@
 		3A4108982133C6990093ED2A /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		3A41089A2133C6990093ED2A /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		3A41089C2133C6990093ED2A /* navi_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = navi_extension.entitlements; sourceTree = "<group>"; };
+		3A4108A42133F0FD0093ED2A /* navi-extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "navi-extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +126,7 @@
 		3A41088F2133C6990093ED2A /* navi-extension */ = {
 			isa = PBXGroup;
 			children = (
+				3A4108A42133F0FD0093ED2A /* navi-extension.entitlements */,
 				3A4108902133C6990093ED2A /* SafariExtensionHandler.swift */,
 				3A4108922133C6990093ED2A /* SafariExtensionViewController.swift */,
 				3A4108942133C6990093ED2A /* SafariExtensionViewController.xib */,
@@ -190,6 +192,11 @@
 					};
 					3A41088A2133C6990093ED2A = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -437,7 +444,7 @@
 		3A4108A12133C6990093ED2A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "navi-extension/navi_extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "navi-extension/navi-extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "navi-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,7 +462,7 @@
 		3A4108A22133C6990093ED2A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "navi-extension/navi_extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "navi-extension/navi-extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "navi-extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
