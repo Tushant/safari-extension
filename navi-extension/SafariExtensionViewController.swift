@@ -10,9 +10,14 @@ import SafariServices
 
 class SafariExtensionViewController: SFSafariExtensionViewController {
     
+    @IBOutlet weak var email: NSTextField!
     @IBOutlet weak var password: NSSecureTextField!
     static let shared = SafariExtensionViewController()
     override func viewDidLoad() {
         self.preferredContentSize = NSSize(width: 300, height: 300)
+    }
+    
+    @IBAction func userLogin(_ sender: Any) {
+        print("email----> \(email.stringValue) password ----> \(password.stringValue)")
     }
 }
