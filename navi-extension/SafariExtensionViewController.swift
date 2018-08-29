@@ -17,7 +17,7 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
     static let shared = SafariExtensionViewController()
     override func viewDidLoad() {
         self.preferredContentSize = NSSize(width: 300, height: 250)
-        message.stringValue = "email value is"
+        message.stringValue = ""
     }
     
     
@@ -54,6 +54,9 @@ class SafariExtensionViewController: SFSafariExtensionViewController {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
                     print("############################")
                     print(json)
+                    if let httpResponse = response as? HTTPURLResponse {
+                        print(httpResponse.statusCode)
+                    }
                     // handle json...
                 }
             } catch let error {
